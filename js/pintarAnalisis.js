@@ -1,3 +1,7 @@
+/**
+ * Funcion para recoger los productos del localStorage
+ * @returns un array con los productos
+ */
 function getItems(){
     let producto = localStorage.getItem('productos2');
     return producto? JSON.parse(producto) : [];
