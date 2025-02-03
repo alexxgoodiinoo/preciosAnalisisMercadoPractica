@@ -12,6 +12,7 @@ productos.forEach(producto => {
     const plataforma = $(`<td class="px-6 py-4">${producto.plataforma}</td>`);
     const precio = $(`<td class="px-6 py-4">${producto.precio}</td>`);
     const imagen = $(`<td class="px-6 py-4"><img src='${producto.imagen}'></td>`);
-    fila.append(nombre, plataforma, precio, imagen);
+    const boton = $(`<td class="px-6 py-4"><button class='comparar' data-nombre='${producto.nombre}'>Comparar precio</button></td>`);
+    fila.append(nombre, plataforma, precio, imagen, boton);
     tbody.append(fila);
 });

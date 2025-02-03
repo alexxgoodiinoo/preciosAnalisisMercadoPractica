@@ -10,6 +10,13 @@
         body{
             background-color: gray;
         }
+        table th, table td {
+            text-align: center;
+        }
+        table td img {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +56,9 @@
                     <th scope="col" class="px-6 py-3">
                         Imagen
                     </th>
+                    <th scope="col" class="px-6 py-3">
+                      Comparar precios
+                  </th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -56,7 +66,7 @@
             </tbody>
         </table>
     </div>
-    
+    <script src="../js/scraping.js"></script>
     <script src="../js/pintar.js"></script>
 </body>
 </html>
