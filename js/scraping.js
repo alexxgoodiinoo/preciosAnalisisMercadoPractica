@@ -31,8 +31,6 @@ $(document).ready(function(){
             .then((productos) => {
                 datosLocalStorage2.unshift(productos);
                 setItems2(productos);
-                const mensaje = $(`<p>Ya puedes consultar la comparación en el apartado de análisis</p>`);
-                caja.append(mensaje);
             })
             .catch((error) => console.error(error))
     });  
